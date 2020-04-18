@@ -1,18 +1,46 @@
 import React from 'react';
 import Scroll from '../common/Scroll';
 
-const Introduction = () =>
+const Introduction = () => (
   <section id="intro" className="wrapper style1 fullscreen fade-up">
-    <div className="inner">
-      <h1>Hyperspace</h1>
-      <p>
-        Just another fine responsive site template designed by{' '}
-        <a href="http://html5up.net">HTML5 UP</a>
-        <br />
-        and released for free under the{' '}
-        <a href="http://html5up.net/license">Creative Commons</a>.
-      </p>
-      <ul className="actions">
+    <div
+      className="inner"
+      style={{ textAlign: 'center', maxWidth: '1200px', margin: '0 auto' }}
+    >
+      <h1>Client Name</h1>
+      <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+        <iframe
+          src="https://vimeo.com/event/33904/embed"
+          frameBorder={0}
+          allow="autoplay; fullscreen"
+          allowFullScreen
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            marginBottom: '20px',
+          }}
+        />
+      </div>
+      <br />
+      <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+        <iframe
+          src="https://app.sli.do/event/ljhsmpln/live/questions"
+          frameBorder={0}
+          allow="autoplay; fullscreen"
+          allowFullScreen
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+          }}
+        />
+      </div>
+      {/* <ul className="actions">
         <li>
           <Scroll type="id" element="one">
             <a href="#one" className="button">
@@ -20,9 +48,9 @@ const Introduction = () =>
             </a>
           </Scroll>
         </li>
-      </ul>
+      </ul> */}
     </div>
   </section>
-
+);
 
 export default Introduction;
